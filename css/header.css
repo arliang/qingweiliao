@@ -1,0 +1,181 @@
+a:hover { text-decoration: none; }
+.g-hd .g-center-wrap{
+    width: auto;
+}
+.m-header {
+    width: 1050px;
+    margin: 0 auto;
+    min-height: 60px;
+    position: relative;
+}
+@media screen and (max-width: 1200px) {
+    .m-header {
+        width: 960px;
+    }
+}
+
+/*logo*/
+.m-header .logo {
+    position: absolute;
+    top: 14px;
+    width: 108px;
+    height: 40px;
+    background: url(../img/logo.png) no-repeat;
+}
+.m-header .logo > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+/*导航*/
+.m-header nav {
+    position: absolute;
+    right: 200px;
+}
+.m-header nav ul li {
+    float: left;
+    position: relative;
+}
+.m-header nav ul li a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #333;
+}
+.m-header nav ul li:hover:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    content: '';
+    background-color: rgb(0, 197, 92);
+}
+.m-header nav ul li a:hover,
+.m-header nav ul li a.current
+ {
+    color: rgb(0, 197, 92) !important;
+}
+
+/*创建按钮*/
+.m-header .u-btn-green {
+    position: absolute;
+    right: 0;
+    top: 13px;
+}
+/*系统消息*/
+.m-header .f-sys-msg{
+    /*display: none;*/
+    position: absolute;
+    z-index: 10000;
+    right: 74px;
+    width: 70px;
+    height: 59px;
+    overflow: hidden;
+    text-align: center;
+    background: url(./img/news.png) no-repeat center center;
+    background-color: #fff;
+    cursor: pointer;
+}
+/*账号信息*/
+.m-header .login {
+    /*display: none;*/
+    position: absolute;
+    z-index: 10000;
+    right: 0;
+    width: 70px;
+    height: 59px;
+    overflow: hidden;
+    text-align: center;
+    background-size: 34px 34px;
+    background-color: #fff;
+    cursor: pointer;
+}
+/*.m-header .login head{
+    background: url(./img/user_icon.png) no-repeat center center;
+}*/
+.m-header .login .z-level{
+    position: absolute;
+    z-index: 10002;
+    height: 16px;
+    width: 22px;
+    right: 8px;
+    top:10px;
+}
+.m-header .login .userhead {
+    position: absolute;
+    z-index: 10002;
+    height: 34px;
+    width: 34px;
+    top: 14px;
+    left: 18px;
+    border-radius: 2px;
+}
+.m-header .login .userhead-div{
+    position: relative;
+    display: block;
+    height: 59px;
+    width: 70px;
+}
+
+.m-header .vip-login {
+    background: url(./img/vip_icon.png?_t=123) no-repeat;
+}
+.m-header .svip-login {
+    background: url(./img/svip_icon.png?_t=123) no-repeat;
+}
+.m-header .f-sys-msg:hover {
+    background: url(./img/news_hover.png?_t=123) no-repeat center center;
+}
+
+/* header css*/
+.m-header .login:hover {
+    height: 130px;
+    line-height: 35px;
+}
+
+.m-header .login a {
+    position: relative;
+    color: #333;
+    display: block;
+    font-size: 14px;
+}
+.m-header .login a:hover {
+    color: #5fb336;
+}
+.m-header .login hr {
+    height: 1px;
+    width: 70px;
+    border: none;
+    background-color: #f8f8f8;
+}
+/*系统消息提示样式*/
+.m-header .f-sys-msg .sys_msg_count_header{
+    display: inline-block;
+    width: auto;
+    min-width: 15px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 15px;
+    color: #ffffff;
+    background: #e02929;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+    top: 21px;
+    left: 42px;
+}
+
+.m-header nav .myliveapp,
+.m-header nav .service,
+.m-header .make-btn {
+    display: none;
+}
+
+img{
+    border: 0;
+}

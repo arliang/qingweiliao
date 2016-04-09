@@ -1,0 +1,291 @@
+@charset 'utf-8';
+
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
+
+  
+/*此处根据网站整体风格，设计标签统一样式*/
+body {
+    font: 14px/27px "微软雅黑";
+    word-wrap: break-word;
+    color: #555;
+    background: #fff;
+}
+  
+a { 
+    text-decoration: none;
+    color: #000;  
+}
+a img { border: 0; outline: none; }
+img {
+    max-width: 100%;
+    border: 0; outline: none;
+}
+  
+/*功能样式*/
+.f-float-l{
+    float:left;
+}
+.f-float-r {
+    float: right;
+}
+
+ 
+/*清除浮动影响*/
+.f-fix::before,
+.f-fix::after{
+    display: table;
+    height: 0px; 
+    line-height: 0px; 
+    content: '';
+}
+
+.f-fix::after {
+    clear: both;
+}
+ 
+/*常用字体大小*/
+.f-font-size12 {
+    font-size: 12px;
+}
+.f-font-size14 {
+    font-size: 14px;
+}
+.f-font-size16 {
+    font-size: 16px;
+} 
+.f-weight-normal {
+    font-weight: normal;
+}
+.f-weight-bold {
+    font-weight: bold;
+}
+.f-text-left {
+    text-align: left;
+}
+.f-text-right {
+    text-align: right;
+}
+.f-text-center {
+    text-align: center;
+}
+
+.f-text-verticel {
+    vertical-align:middle;
+}
+/*文本缩进隐藏*/
+.f-text-indent {
+   overflow:hidden;
+   text-indent:-30000px; 
+}
+.f-text-ellipsis {
+    overflow:hidden;
+    word-wrap:normal;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.f-margin-top10 {
+    margin-top: 10px;
+}
+.f-margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*字体颜色*/
+.f-color-green {
+    color: #5fb336;
+}
+
+/*错误背景色*/
+.f-error-bg {
+    background-color: #fff3dd;
+}
+/*状态样式*/
+.z-hover {
+
+}
+
+/*元件样式*/
+.u-btn {
+
+}
+.u-close-btn {
+    display:block;
+    width: 15px;
+    height: 17px;
+    background: url(./img/close_icon.png);
+}
+.u-btn-green {
+    display: block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 197, 92);
+    color: rgb(0, 197, 92);
+    text-align: center;
+    font-size: 18px;
+}
+.u-error-tip {
+    position: absolute;
+    height: 33px;
+    min-width: 1px;
+    line-height: 33px;
+    padding-left: 35px;
+    padding-right: 10px;
+	right: 1px;
+    background: #fbfbfb url(./img/hint_icon.png) no-repeat 10px center;
+    border: 1px solid #dfdfdf;
+}
+
+.u-error-tip::before {
+    background: #fbfbfb;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    color: #ddd;
+    content: "";
+    height: 8px;
+    right: 22px;
+    position: absolute;
+    top: -5px;
+    transform: rotate(-45deg);
+    transform-origin: initial;
+    width: 8px;
+}
+
+.u-mask-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    background: #000;
+    opacity: 0.4;
+}
+
+/*模块样式*/
+.m-dialog {
+    display: none;
+}
+.m-dialog .u-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/*通用布局样式*/
+.g-center-wrap {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.g-hd {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    min-height: 60px;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid;
+    border-color: rgba(217,217,217,0.59);
+}
+.g-bd {
+    width: 100%;
+    float: left;
+    min-height: 60px;
+}
+.g-ft {
+    width: 100%;
+    float: left;
+    /* position: relative; */
+    min-height: 290px;
+    background: #222222;
+}
+.g-ft .links{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 37px;
+    height: 45px;
+    line-height: 60px;
+    background-color: #2e2e2e;
+    text-align: center;
+    overflow: hidden;
+}
+.g-ft .links a,
+.g-ft .links span{
+    padding: 0 8px;    
+    color: #666;
+    position: relative;
+}
+
+.g-ft .links a:after{
+    position: absolute;
+    content: '';
+    right: -2px;
+    width: 1px;
+    top: 4px;
+    bottom: 2px;
+    background-color: #666;
+}
+
+.g-ft .links a:last-child:after{
+    display: none;
+}
+/*版权信息*/
+.g-ft .copyright {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 162px;
+    line-height: 162px;
+    background-color: #424242;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.u-tip-box { display: inline-block; padding: 0; position: relative; }
+.u-error-input-bg { background-color: #FFF3DD; }
+.u-error-tip { display: inline-block; min-width: 1px; height: 33px; line-height: 33px; padding-left: 35px; padding-right: 10px; background: #fbfbfb url(./img/hint_icon.png) no-repeat 10px center; border: 1px solid #dfdfdf; white-space: nowrap; position: absolute; top: 28px; right: 2px; z-index: 99999; }
+.u-error-tip::before { background: #fbfbfb; border-right: 1px solid; border-top: 1px solid; color: #ddd; content: ""; height: 8px; right: 22px; position: absolute; top: -5px; transform: rotate(-45deg); transform-origin: initial; width: 8px; }
+
+.u-hover-color-green:hover{
+    background: rgb(0, 197, 92);
+    color: #fff;
+}
+.u-hover-color-gray:hover{
+    /*background: #9da;*/
+}
+
+
+/***************** 运营主题 ******************/
+
+.body.theme{
+
+}
+
+.body.theme .g-hd{
+    background: url(img/theme/type-1/menu_bg.jpg?theme=3) repeat-x scroll;
+    background-position: -168px 50%;
+}
