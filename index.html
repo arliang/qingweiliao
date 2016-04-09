@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
 </head>
 
 <body class="theme">
@@ -40,13 +41,115 @@
             </div>
         </div>
     </div>
+    <div class="page-content">
+        <div class="page page-1 bg-gray">
+            <div class="wrap">
+                <div class="lt">
+                    <div class="lt-icon">
+                    </div>
+                </div>
+                <div class="rt">
+                    <div class="title"></div>
+                    <div class="barcode-wrap">
+                        <div class="barcode"></div>
+                        <div class="button-list">
+                            <div class="button iphone-btn"><a href="javascript:void(0)">下载iPhone版</a></div>
+                            <div class="button android-btn"><a href="javascript:void(0)">下载Android版</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page page-2">
+            <div class="wrap">
+                <div class="lt">
+                    <div class="title"></div>
+                </div>
+                <div class="rt">
+                    <div class="rt-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page page-3 bg-gray">
+            <div class="wrap">
+                <div class="lt">
+                    <div class="lt-icon">
+                    </div>
+                </div>
+                <div class="rt">
+                    <div class="title"></div>
+                </div>
+            </div>
+        </div>
+        <div class="page page-4">
+            <div class="wrap">
+                <div class="lt">
+                    <div class="title"></div>
+                </div>
+                <div class="rt">
+                    <div class="rt-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page page-5 bg-gray">
+            <div class="wrap">
+                <div class="lt">
+                    <div class="lt-icon">
+                    </div>
+                    <div class="share-wrap">
+                        <!--
+                        <div class="wb"></div>
+                        <div class="wx"></div>
+                        <div class="qq"></div>
+                        <div class="py"></div>
+                        -->
+                    </div>
+                </div>
+                <div class="rt">
+                    <div class="title"></div>
+                </div>
+            </div>
+        </div>
+        <div class="page page-6">
+            <div class="wrap">
+                <div class="lt">
+                    <div class="title"></div>
+                </div>
+                <div class="rt">
+                    <div class="rt-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="g-ft">
         <div class="foot-theme">
             <div class="foot-theme-other"></div>
         </div>
         <div class="g-center-wrap"></div>
-        <div class="copyright">广东厚德世家养老产业有限公司 &copy;版权所有 粤ICP备 15111926 号</div>
+        <div class="copyright">广东厚德世家养老产业有限公司 &copy;版权所有 粤ICP备 15111926号</div>
     </div>
+    <script>
+    (function(){
+        function addClass(){
+            var top = (document.body.scrollTop || document.documentElement.scrollTop) + 700;
+            var page = Math.floor((top + 200) / 660);
+            var dom = document.querySelector('.page.page-' + page);
+            var className = dom.className;
+            if(className.indexOf('active') == -1){
+                dom.className = className + ' active';
+            }
+        }
+        setTimeout(function(){
+            window.scrollTo(0, 0);
+            // 页面滚动
+            window.onscroll = addClass;
+            addClass();
+        }, 300);
+    })()
+    </script>
 </body>
 
 </html>

@@ -216,8 +216,6 @@ img {
 .g-ft {
     width: 100%;
     float: left;
-    /* position: relative; */
-    min-height: 290px;
     background: #222222;
 }
 .g-ft .links{
@@ -253,7 +251,7 @@ img {
 }
 /*版权信息*/
 .g-ft .copyright {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     bottom: 0;
     height: 162px;
