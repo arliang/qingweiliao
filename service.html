@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
 </head>
 
 <body class="theme">
@@ -40,13 +41,59 @@
             </div>
         </div>
     </div>
+    <div class="page-content">
+        <div class="service service-1 bg-gray">
+            <div class="wrap">
+                <div class="lt">
+                    <div class="lt-icon">
+                    </div>
+                </div>
+                <div class="rt">
+                    <div class="title"></div>
+                </div>
+            </div>
+        </div>
+        <div class="service service-2">
+            <div class="wrap">
+                <div class="title">所有专题</div>
+                <div class="topics">
+                    <div class="item1"></div>
+                    <div class="item2"></div>
+                    <div class="item3"></div>
+                    <div class="item4"></div>
+                    <div class="item5"></div>
+                    <div class="item6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="g-ft">
         <div class="foot-theme">
             <div class="foot-theme-other"></div>
         </div>
         <div class="g-center-wrap"></div>
-        <div class="copyright">广东厚德世家养老产业有限公司 &copy;版权所有 粤ICP备 15111926号</div>
+        <div class="copyright">广东厚德世家养老产业有限公司 ©版权所有 粤ICP备 15111926号</div>
     </div>
+
+
+    <script>
+    (function(){
+        function addClass(){
+            var top = (document.body.scrollTop || document.documentElement.scrollTop) + 700;
+            var page = Math.floor((top + 200) / 660);
+            var dom = document.querySelector('.service.service-' + page);
+            var className = dom.className;
+            if(className.indexOf('active') == -1){
+                dom.className = className + ' active';
+            }
+        }
+        setTimeout(function(){
+            addClass();
+        }, 300);
+    })()
+    </script>
 </body>
 
 </html>

@@ -142,7 +142,7 @@
         function addClass(){
             var top = (document.body.scrollTop || document.documentElement.scrollTop) + 700;
             var page = Math.floor((top + 200) / 660);
-            var dom = document.querySelector('.page.page-' + page);
+            var dom = document.querySelector('.page-' + page);
             var className = dom.className;
             if(className.indexOf('active') == -1){
                 dom.className = className + ' active';
