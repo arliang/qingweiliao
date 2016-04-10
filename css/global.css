@@ -251,7 +251,6 @@ img {
 }
 /*版权信息*/
 .g-ft .copyright {
-    /* position: absolute; */
     width: 100%;
     bottom: 0;
     height: 162px;
@@ -261,6 +260,7 @@ img {
     color: #fff;
     font-size: 24px;
     vertical-align: middle;
+    min-width: 1050px;
 }
 
 .u-tip-box { display: inline-block; padding: 0; position: relative; }

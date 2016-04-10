@@ -1,5 +1,5 @@
 .page-content{
-	margin-top: 60px;
+	/* margin-top: 60px; */
 }
 
 .page-content .wrap{
@@ -663,4 +663,48 @@
 }
 .page-content .service-2 a.f {
 	background-image: url(../img/006.jpg);
+}
+
+/* ----------- service ----------- */
+body.joinus {
+	background: #f7f7f7;
+}
+
+.page-content .contactus .highlight {
+	color: rgb(0, 197, 92);
+}
+
+.page-content .contactus {
+	background: #fff;
+	width: 990px;
+	height: 240px;
+	margin: 132px auto 0 auto;
+	padding-left: 60px;
+	padding-top: 45px;
+}
+
+.page-content .contactus p {
+	line-height: 48px;
+	font-size: 18px;
+}
+
+.page-content p.company {
+	background: url(../img/shutiao.png) no-repeat left center;
+	padding-left: 20px;
+}
+
+.page-content .aside {
+	float: left;
+}
+
+.page-content .aside.first {
+	margin-right: 65px;
+	padding-left: 20px;
+}
+
+.page-content .map {
+	width: 1050px;
+	height: 530px;
+	margin: 0 auto 72px auto;
+	display: block;
 }
