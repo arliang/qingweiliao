@@ -57,12 +57,12 @@
             <div class="wrap">
                 <div class="title">所有专题</div>
                 <div class="topics">
-                    <div class="item1"></div>
-                    <div class="item2"></div>
-                    <div class="item3"></div>
-                    <div class="item4"></div>
-                    <div class="item5"></div>
-                    <div class="item6"></div>
+                    <a class="item a" href="javascript:void 0;"><p class="qrcode"></p></a>
+                    <a class="item b" href="javascript:void 0;"><p class="qrcode"></p></a>
+                    <a class="item c" href="javascript:void 0;"><p class="qrcode"></p></a>
+                    <a class="item d" href="javascript:void 0;"><p class="qrcode"></p></a>
+                    <a class="item e" href="javascript:void 0;"><p class="qrcode"></p></a>
+                    <a class="item f" href="javascript:void 0;"><p class="qrcode"></p></a>
                 </div>
             </div>
         </div>
@@ -81,9 +81,7 @@
     <script>
     (function(){
         function addClass(){
-            var top = (document.body.scrollTop || document.documentElement.scrollTop) + 700;
-            var page = Math.floor((top + 200) / 660);
-            var dom = document.querySelector('.service.service-' + page);
+            var dom = document.querySelector('.service-1');
             var className = dom.className;
             if(className.indexOf('active') == -1){
                 dom.className = className + ' active';

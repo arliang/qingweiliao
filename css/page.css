@@ -569,14 +569,14 @@
 
 /* ----------- service ----------- */
 
-.page-content .service.service-1{
+.page-content .service-1{
 	height: 700px;
 }
 
-.page-content .service.service-1 .wrap{
+.page-content .service-1 .wrap{
 	background: url(../img/banner-service.png);
 }
-.page-content .service.service-1 .lt-icon{
+.page-content .service-1 .lt-icon{
 	position: absolute;
 	top: -140px;
 	bottom: 0;
@@ -589,7 +589,7 @@
 	-ms-transition: top 2s cubic-bezier(.1,0,.04,1), opacity 2s;
 }
 
-.page-content .service.service-1 .title{
+.page-content .service-1 .title{
 	position: absolute;
 	top: 700px;
 	left: 30px;
@@ -603,20 +603,64 @@
 	opacity: 0;
 }
 
-.page-content .service.service-1.active .lt-icon{
+.page-content .service-1.active .lt-icon{
 	top: 230px;
 }
 
-.page-content .service.service-1.active .title{
+.page-content .service-1.active .title{
 	top: 182px;
 	opacity: 1;
 }
 
-
-.page-content .service.service-2{
-	height: 700px;
+.page-content .service-2 .title{
+	margin: 60px auto;
+	text-align: center;
+	font-size: 24px;
 }
 
+.page-content .service-2 .topics{
+	width: 984px;
+	margin: 60px auto;
+}
 
+.page-content .service-2 .topics:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    width: 100%;
+}
 
-.title {}
+.page-content .service-2 .item{
+	width: 328px;
+	height: 280px;
+	float:left;
+	background-repeat: no-repeat;
+}
+.page-content .service-2 .qrcode{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: url(../img/app_code.png) no-repeat;
+}
+.page-content .service-2 a:hover .qrcode{
+	display: block;
+}
+.page-content .service-2 a.a {
+	background-image: url(../img/001.jpg);
+}
+.page-content .service-2 a.b {
+	background-image: url(../img/002.jpg);
+}
+.page-content .service-2 a.c {
+	background-image: url(../img/003.jpg);
+}
+.page-content .service-2 a.d {
+	background-image: url(../img/004.jpg);
+}
+.page-content .service-2 a.e {
+	background-image: url(../img/005.jpg);
+}
+.page-content .service-2 a.f {
+	background-image: url(../img/006.jpg);
+}
